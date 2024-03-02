@@ -1,21 +1,28 @@
 
-------------------------##Test environment-----------------------------------------------
+## Test environment
 The Cypress tests were run with the following settings:
-      node -v: v20.11.1
-      npm -v: 10.5.0
-      Cypress package version: 13.6.6
-      Cypress binary version: 13.6.6
-      Electron version: 27.1.3
-      Bundled Node version:18.17.1
+
+      * node -v: v20.11.1
       
-      Browser: Chrome
+      * npm -v: 10.5.0
       
-      Operating System: Windows 11
+      * Cypress package version: 13.6.6
+      
+      * Cypress binary version: 13.6.6
+      
+      * Electron version: 27.1.3
+      
+      * Bundled Node version:18.17.1
+      
+      * Browser: Chrome
+      
+      * Operating System: Windows 11
 
 Please run the following commmand to execute the test suite : 
+
 npx cypress run --spec "cypress/e2e/My tests/*.cy.js"
 
-----------------------##Test scenarios-------------------------------------------------------
+## Test scenarios
 
 
 Browsers: Edge, Chrome, Firefox, Safari
@@ -41,6 +48,6 @@ Devices: PC, Mac, android, iOS
 * Click view collection	(Automated yes)
 * Click load designs	(Automated No)
 
-#** Note: **
+### ** Note: **
 **1. When the link was clicked, it didnt require me to enter my credentials. So, i worked around it (bug) assuming that this is how the page was set up for me.**
 **2. I pushed the changes directly to the master because it was my own repo. Normally i would push it to a branch and then merge it to develop/master**
