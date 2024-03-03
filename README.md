@@ -42,6 +42,7 @@ Devices: PC, Mac, android, iOS
 * Switch logo :cancel	(Automated yes)
 * Switch logo: continue	(Automated yes)
 * Switch logo: select a new logo then hit cancel	(Automated No)
+* Switching a logo and signing out to see if the changes are saved (Automated No)
 * Upgrade account	(Automated :Partial)
 * Submitted values to upgraded account to verify	(Automated No)
 * Click edit on a post	(Automated yes)
