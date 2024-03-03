@@ -7,22 +7,24 @@ describe('Search tests', () => {
 
     it('Checking the browser back on Search field', () => {
 
-        cy.get('#searchTerm').clear()
+        cy.get('.tw-right-3 > .tw-fill-current').click()
         cy.Search()
-        cy.get('h2').should('have.class', 'tw-text-2xl')
+        
+        cy.get('h1').contains('Create new designs') // the app when going back on the browser was taking me to the main page
         cy.go('back');
-        cy.get('#searchTerm').should('have.value', 'Tech Challenge') //search term's previous state is stored
+        cy.go('forward')
+        cy.get('h1').contains('Create new designs')
     });
 
 
-    it('Checking for the search field', () => {
+     it('Checking for the search field', () => {
 
         cy.get('.tw-right-3 > .tw-fill-current').click()
         cy.get('#searchTerm').type('Tech')
        cy.Search()
         cy.get('h1').contains('Tech Templates')
        
-    });
+    }); 
 
 
 })

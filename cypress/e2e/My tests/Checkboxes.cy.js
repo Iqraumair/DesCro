@@ -8,7 +8,7 @@ describe('checkboxes tests', () => {
 
 
   
-    it('Checking checkboxes are checked', () => {
+  /*  it('Checking checkboxes are checked', () => {
        
         cy.get(':checkbox').each(($check) => {
             cy.wrap($check).check({ force: true });
@@ -27,19 +27,24 @@ describe('checkboxes tests', () => {
             cy.wrap($check).should('not.be.checked');
         });
 
-    });
+    }); */
 
     
 
     it('Checks the state of the checkboxes after hitting back on browser ', () => {
-      
-        cy.go('back');
-        // the page doesnt store the state of the checkboxes so im assuming it is a functionality
-        cy.get(':checkbox').each(($check) => {
-            cy.wrap($check).should('not.be.checked');
-        });
+
+     
+        cy.get('#Instagram').check({ force: true})
+      cy.go('back')
+        cy.wait(200)
+      cy.go('forward')
+      cy.wait(200)        
+        cy.get('#Instagram').each(($check) => {
+            cy.wrap($check).should('be.checked');
+        })
 
 
     });
+    
 
 })

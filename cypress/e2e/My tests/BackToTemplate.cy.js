@@ -1,4 +1,4 @@
-describe('Edit post', () => {
+describe('Back to Template button', () => {
     beforeEach(() => {
         cy.AccessPage()
     })
