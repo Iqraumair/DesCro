@@ -24,7 +24,7 @@ npx cypress run --spec "cypress/e2e/My tests/*.cy.js"
 
 ## Test scenarios
 
-
+Test Environment
 Browsers: Edge, Chrome, Firefox, Safari
 OS: Windows, Mac, Linux
 Devices: PC, Mac, android, iOS
@@ -48,6 +48,13 @@ Devices: PC, Mac, android, iOS
 * Click edit on a post	(Automated yes)
 * Click view collection	(Automated yes)
 * Click load designs	(Automated No)
+
+### Suggestions: 
+1. The rotate button editing an image doesnt function. The functionality can be made available for better user experience. 
+2. The search field accepts every character and value. Restrictions can be put into place to blacklist certain characters for added security. 
+3. The sizing of the templates can be made uniform to make it more user-friendly. 
+4. A field can be added at the bottom of the page to allow user to choose the number of templates they wish to see at any given time. 
+
 
 ### ** Note: **
 **1. When the link was clicked, it didnt require me to enter my credentials. So, i worked around it (bug) assuming that this is how the page was set up for me.**
